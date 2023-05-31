@@ -1,0 +1,33 @@
+<%- include('../includes/head.ejs') %>
+
+  <link rel="stylesheet" href="/style/navigation.css">
+  <link rel="stylesheet" href="/style/message.css">
+</head>
+<body>
+
+  <%- include('../includes/navigation.ejs') %>
+
+  <div class="parent-container">
+<% for (product of products) { %>
+
+<div class="container">
+
+<h2>Product Message:</h2>
+<p><strong>To:</strong> <%= product.to %></p>
+<p><strong>From:</strong> <%= product.from %></p>
+<p><strong>Quantity:</strong> <%= product.quantity %></p>
+<p><strong>Address:</strong> <%= product.address %></p>
+<p><strong>Transporter:</strong> <%= product.transporter %></p>
+</div>
+<% } %>
+  </div>
+
+  <div class="reply"><form action="/form/add-product"><button class="btn">Reply</button></form></div>
+
+
+
+
+
+  <!-- <button class="btn" type="submit">Reply</button> -->
+  
+  <%- include('../includes/end.ejs') %>

@@ -1,0 +1,22 @@
+<%- include('../includes/head.ejs') %>
+  <link rel="stylesheet" href="/style/signup.css">
+  <link rel="stylesheet" href="/style/navigation.css">
+</head>
+<body>
+
+  <%- include('../includes/navigation.ejs') %>
+
+  <div class="signup-container">
+    <h2>Transporter Sign Up Page</h2>
+    <form action="/auth/transporter-signup" method="POST">
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <input type="password" id="password" name="password" placeholder="Password" required>
+
+      <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm Password" required>
+      
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <%- include('../includes/end.ejs') %>

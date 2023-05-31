@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Comme&family=Itim&family=Josefin+Sans&family=Mukta&family=Pacifico&family=Prompt:wght@300&family=Raleway&family=Roboto:wght@300&family=Ysabeau&family=Zilla+Slab&display=swap');
+
+body{
+    font-family: 'Zilla Slab', serif;
+    font-size: large;
+    margin: auto;
+    width: 100%;
+}
+
+.parent-container{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin: 3rem;
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 18%;
+    float: left;
+}
+
+.reply{
+    margin: auto;
+    margin-left: 47rem;
+}
+
+.btn{
+    margin: auto;
+    float: left;
+    border: 1px solid rgb(236, 228, 228);
+    border-radius: 5px;
+    padding: 1rem;
+    font-family: 'Zilla Slab', serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 180px;
+    font-size: larger;
+    background-color: rgb(85, 85, 190);
+    color: white;
+}
